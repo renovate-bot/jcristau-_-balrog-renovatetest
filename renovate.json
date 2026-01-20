@@ -3,6 +3,7 @@
   "extends": [
     "config:best-practices"
   ],
+  "groupName": null,
   "packageRules": [
     {
       "matchManagers": ["pep621"],
