@@ -7,11 +7,11 @@
   "packageRules": [
     {
       "matchManagers": ["pep621"],
-      "labels": ["backend"]
+      "groupName": "python dependencies"
     },
     {
       "matchManagers": ["npm"],
-      "labels": ["frontend"]
+      "groupName": "js dependencies"
     }
   ]
 }
