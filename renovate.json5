@@ -31,14 +31,16 @@
     // some Dockerfiles have an argument, eg: `PYTHON_VERSION` in their `FROM`
     // statements, which must be handled separately
     {
-      "matchManagers": ["dockerfile", "docker-compose"]
+      "matchManagers": ["dockerfile", "docker-compose"],
       "groupName": "docker dependencies"
-    },
+    }
+  ],
+  "customManagers": [
     // .taskcluster.yml decision image
     {
       "customType": "jsonata",
       "fileFormat": "yaml",
-      "datasource": "docker",
+      "datasourceTemplate": "docker",
       "managerFilePatterns": [".taskcluster.yml"],
       "matchStrings": [
         // jsonata query to extract docker image name, tag, and digest from a .taskcluster.yml
