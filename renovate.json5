@@ -46,8 +46,9 @@
       "managerFilePatterns": [".taskcluster.yml"],
       "matchStrings": [
         // image: mozillareleases/taskgraph:decision-v14.4.1@sha256:d5116d01d51856be2c143f260d0ba44f9b07576aa7104744bb94335534de2638
-        "image: (?<depName>\\S+):decision-v(?<currentValue>\\S+)@(?<currentDigest>\\S+)"
+        "image: (?<depName>\\S+):(?<currentValue>\\S+)@(?<currentDigest>\\S+)"
       ],
+      "extractVersion": "^decision-v(?<version>.*)$"
     }
   ]
 }
