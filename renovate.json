@@ -3,5 +3,9 @@
   "extends": [
     "github>mozilla-releng/reps:renovate-preset.json5"
   ],
-  "lockFileMaintenance": { "enabled": true }
+  "lockFileMaintenance": {
+    "enabled": true,
+    "branchTopic": "lock-file-maintenance-{{packageFile}}",
+    "commitMessageExtra": "({{packageFile}})"
+  }
 }
