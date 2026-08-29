@@ -27,7 +27,7 @@ RUN ["/usr/local/go/bin/go", "build", \
     "./cmd/umoci"]
 
 
-FROM debian:buster@sha256:58ce6f1271ae1c8a2006ff7d3e54e9874d839f573d8009c20154ad0f2fb0a225
+FROM debian:trixie@sha256:f324c7ff54321e8d9c588493a20244965938ce0aa50bbd1022d38010e9ffc4b1
 
 # %include-run-task
 
