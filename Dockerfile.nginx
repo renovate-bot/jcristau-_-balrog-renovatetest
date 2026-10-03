@@ -1,5 +1,5 @@
 # Should match the version used in production
-FROM nginx:1.20@sha256:38f8c1d9613f3f42e7969c3b1dd5c3277e635d4576713e6453c6193e66270a6d
+FROM nginx:1.31@sha256:abe47724e466aeab9a345d8e46a221c2fa8953c7848bb4a3bd9976a7199f8cf2
 
 RUN apt-get -q update \
     && apt-get -q --yes install ncat \
